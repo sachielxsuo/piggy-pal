@@ -17,6 +17,9 @@
 #   hello：进入对话时的开场白（客户端问候气泡 + 可 TTS）
 #   persona：LLM 人设（仅服务端用，不暴露给客户端）
 # 客户端角色图片按约定取 assets/<role_id>.png，无需在此配置。
+#   图片是打包资源，不在仓库里（版权原因）：加完角色记得往
+#   client/assets/<role_id>.png 放一张图，再重打包客户端；
+#   不放也能用，客户端会显示占位头像。详见 docs/配置引导.md 第 5、7 节。
 roles:
   - role_id: peppa
     name: 佩奇

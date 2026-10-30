@@ -41,7 +41,7 @@ cp deploy.env.example deploy.env  # 填入自己的服务器 IP 和域名
 >
 > 角色形象（`client/assets/*.png`）版权归他人，不在仓库里。缺图不影响运行，
 > 客户端会显示「角色名首字 + 纯色圆」的占位头像；想要真图自己放进去，
-> 文件名按 `role_id` 命名，见 [配置引导 · 角色形象](docs/配置引导.md#6-角色形象本地自备不进仓库)。
+> 文件名按 `role_id` 命名，见 [配置引导 · 角色形象](docs/配置引导.md#7-角色形象本地自备不进仓库)。
 
 ## 访问令牌（API_TOKEN）
 
@@ -95,6 +95,6 @@ cp deploy.env.example deploy.env  # 填入自己的服务器 IP 和域名
 |---|---|---|
 | 词典底库 `dict_base` | [ECDICT](https://github.com/skywind3000/ECDICT) | MIT |
 | 单词发音 mp3 | Wikimedia Commons | CC BY-SA 3.0，逐文件出处与作者见 `server/internal/dict/data/audio/credits.json` |
-| 角色形象 | 不在仓库里，本地自备 | 版权归各自权利人，见 [配置引导 · 角色形象](docs/配置引导.md#6-角色形象本地自备不进仓库) |
+| 角色形象 | 不在仓库里，本地自备 | 版权归各自权利人，见 [配置引导 · 角色形象](docs/配置引导.md#7-角色形象本地自备不进仓库) |
 
 如果要拿去商用或公开发布，请自行替换角色形象，并遵守音频的 CC BY-SA 署名要求。
