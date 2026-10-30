@@ -1,0 +1,43 @@
+# 环境变量 / 密钥（任何层级，绝不提交）
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+
+# macOS
+.DS_Store
+
+# 签名（keystore 与密码绝不进 git；换机靠离线备份恢复）
+key.properties
+*.jks
+*.keystore
+
+# 编译产物
+build/
+dist/
+*.db
+
+# 服务端编译产物（部署脚本本地生成）
+server/piggy-pal-server
+
+# Python 缓存
+__pycache__/
+*.pyc
+
+# 部署配置（真实服务器地址 / 域名，绝不提交；模板见 deploy.env.example）
+deploy.env
+*.local.env
+
+# 角色形象：版权归各自权利人（小猪佩奇等），不进仓库。
+# 本地自备 client/assets/peppa.png / george.png，缺失时客户端显示占位头像。
+# 说明见 docs/配置引导.md「角色形象」。
+client/assets/peppa.png
+client/assets/george.png
+demo/assets/peppa.png
+demo/assets/george.png
+
+# 密钥备份包（默认落在 ~/piggypal-secrets；明文密钥，绝不能提交）
+piggypal-secrets*
+*.tar.gz.enc

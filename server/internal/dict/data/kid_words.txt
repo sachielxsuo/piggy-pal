@@ -1,0 +1,172 @@
+# PiggyPal 儿童词库（人工审校的 170 个高频词）
+# 字段：word|中文释义（单一、儿童友好）|英文例句（3–6 词）|例句中文
+# 音标不在这里维护，构建时从 ipa-dict（MIT）合并。
+cat|猫|The cat is sleeping.|小猫在睡觉。
+dog|狗|The dog can run fast.|小狗跑得很快。
+pig|猪|The pig is pink.|小猪是粉色的。
+cow|奶牛|The cow says moo.|奶牛哞哞叫。
+duck|鸭子|The duck can swim.|鸭子会游泳。
+sheep|绵羊|The sheep is white.|绵羊是白色的。
+horse|马|The horse can run.|马会跑。
+rabbit|兔子|The rabbit likes carrots.|兔子喜欢胡萝卜。
+bird|鸟|The bird can fly.|小鸟会飞。
+fish|鱼|The fish is in the water.|鱼在水里。
+bear|熊|The bear is big and brown.|熊又大又棕。
+lion|狮子|The lion has a loud roar.|狮子吼声很大。
+tiger|老虎|The tiger has orange fur.|老虎有橙色的毛。
+monkey|猴子|The monkey likes bananas.|猴子喜欢香蕉。
+elephant|大象|The elephant has a long nose.|大象有长长的鼻子。
+panda|熊猫|The panda eats bamboo.|熊猫吃竹子。
+frog|青蛙|The frog can jump high.|青蛙跳得很高。
+turtle|乌龟|The turtle walks slowly.|乌龟走得很慢。
+bee|蜜蜂|The bee makes honey.|蜜蜂酿蜂蜜。
+butterfly|蝴蝶|The butterfly is colorful.|蝴蝶五颜六色。
+dinosaur|恐龙|The dinosaur is very big.|恐龙非常大。
+fox|狐狸|The fox has a bushy tail.|狐狸有毛茸茸的尾巴。
+mouse|老鼠|The mouse is very small.|老鼠很小。
+owl|猫头鹰|The owl sleeps in the day.|猫头鹰白天睡觉。
+chicken|小鸡|The chicken says cluck.|小鸡咯咯叫。
+penguin|企鹅|The penguin lives in the cold.|企鹅住在寒冷的地方。
+snake|蛇|The snake is long.|蛇长长的。
+ant|蚂蚁|The ant is tiny.|蚂蚁很小。
+spider|蜘蛛|The spider makes a web.|蜘蛛织网。
+kangaroo|袋鼠|The kangaroo can hop.|袋鼠会跳。
+apple|苹果|I eat an apple.|我吃一个苹果。
+banana|香蕉|The banana is yellow.|香蕉是黄色的。
+orange|橙子|This orange is sweet.|这个橙子很甜。
+grape|葡萄|I like grapes.|我喜欢葡萄。
+pear|梨|The pear is green.|梨是绿色的。
+peach|桃子|The peach is soft.|桃子软软的。
+watermelon|西瓜|Watermelon is juicy.|西瓜很多汁。
+strawberry|草莓|The strawberry is red.|草莓是红色的。
+lemon|柠檬|The lemon is sour.|柠檬很酸。
+mango|芒果|Mango is sweet.|芒果很甜。
+milk|牛奶|I drink milk.|我喝牛奶。
+water|水|Please drink water.|请喝水。
+bread|面包|I eat bread for breakfast.|我早餐吃面包。
+rice|米饭|We eat rice.|我们吃米饭。
+egg|鸡蛋|I have an egg.|我有一个鸡蛋。
+cake|蛋糕|The cake is yummy.|蛋糕很好吃。
+cookie|饼干|I want a cookie.|我想要一块饼干。
+candy|糖果|Candy is sweet.|糖果很甜。
+juice|果汁|I like apple juice.|我喜欢苹果汁。
+cheese|奶酪|The mouse likes cheese.|老鼠喜欢奶酪。
+carrot|胡萝卜|Rabbits eat carrots.|兔子吃胡萝卜。
+tomato|西红柿|The tomato is red.|西红柿是红色的。
+potato|土豆|I like potatoes.|我喜欢土豆。
+corn|玉米|Corn is yellow.|玉米是黄色的。
+soup|汤|The soup is hot.|汤很热。
+noodle|面条|I eat noodles.|我吃面条。
+jump|跳|I can jump.|我会跳。
+run|跑|Let us run fast.|我们快跑吧。
+walk|走|We walk to school.|我们走路去学校。
+clap|拍手|Clap your hands.|拍拍手。
+stomp|跺脚|Stomp your feet.|跺跺脚。
+wave|挥手|Wave goodbye.|挥手说再见。
+dance|跳舞|Let us dance together.|我们一起跳舞。
+sing|唱歌|I like to sing.|我喜欢唱歌。
+swim|游泳|I can swim.|我会游泳。
+fly|飞|Birds can fly.|鸟会飞。
+hop|单脚跳|The frog can hop.|青蛙会跳。
+sit|坐|Please sit down.|请坐下。
+stand|站|Stand up, please.|请站起来。
+open|打开|Open the door.|把门打开。
+close|关上|Close your eyes.|闭上眼睛。
+eat|吃|I eat an apple.|我吃苹果。
+drink|喝|I drink water.|我喝水。
+sleep|睡觉|Time to sleep.|该睡觉了。
+wash|洗|Wash your hands.|洗洗小手。
+brush|刷|Brush your teeth.|刷刷牙齿。
+push|推|Push the door.|推门。
+pull|拉|Pull the rope.|拉绳子。
+throw|扔|Throw the ball.|扔球。
+catch|接住|Catch the ball.|接住球。
+red|红色|The apple is red.|苹果是红色的。
+blue|蓝色|The sky is blue.|天空是蓝色的。
+yellow|黄色|The sun is yellow.|太阳是黄色的。
+green|绿色|The grass is green.|草是绿色的。
+black|黑色|The cat is black.|猫是黑色的。
+white|白色|Milk is white.|牛奶是白色的。
+pink|粉色|The pig is pink.|小猪是粉色的。
+purple|紫色|Grapes can be purple.|葡萄有紫色的。
+brown|棕色|The bear is brown.|熊是棕色的。
+head|头|Touch your head.|摸摸头。
+eye|眼睛|I have two eyes.|我有两只眼睛。
+ear|耳朵|The rabbit has long ears.|兔子有长耳朵。
+nose|鼻子|Touch your nose.|摸摸鼻子。
+mouth|嘴巴|Open your mouth.|张开嘴巴。
+hand|手|Give me your hand.|把手给我。
+foot|脚|My foot is small.|我的脚很小。
+leg|腿|The dog has four legs.|狗有四条腿。
+arm|胳膊|Wave your arms.|挥挥胳膊。
+hair|头发|Her hair is long.|她的头发很长。
+tooth|牙齿|My tooth is white.|我的牙齿白白的。
+tummy|肚子|My tummy is full.|我的肚子饱饱的。
+happy|开心|I am happy.|我很开心。
+sad|难过|The baby is sad.|宝宝很难过。
+angry|生气|He looks angry.|他看起来生气了。
+scared|害怕|I am not scared.|我不害怕。
+tired|累|I am sleepy and tired.|我又困又累。
+excited|兴奋|I am excited to play.|能去玩我很兴奋。
+surprised|惊讶|She is surprised.|她很惊讶。
+proud|自豪|I am proud of you.|我为你骄傲。
+mom|妈妈|Mom is here.|妈妈在这里。
+dad|爸爸|Dad can help.|爸爸能帮忙。
+baby|宝宝|The baby is sleeping.|宝宝在睡觉。
+brother|哥哥|My brother is tall.|我哥哥很高。
+sister|姐姐|My sister likes dolls.|我姐姐喜欢娃娃。
+grandma|奶奶|Grandma bakes cake.|奶奶烤蛋糕。
+grandpa|爷爷|Grandpa tells stories.|爷爷讲故事。
+friend|朋友|You are my friend.|你是我的朋友。
+family|家人|I love my family.|我爱我的家人。
+ball|球|Throw the ball.|扔球。
+book|书|I read a book.|我读一本书。
+toy|玩具|I have a new toy.|我有一个新玩具。
+car|汽车|The car is fast.|汽车很快。
+bus|公交车|The bus is yellow.|公交车是黄色的。
+train|火车|The train is long.|火车长长的。
+bike|自行车|I ride my bike.|我骑自行车。
+boat|船|The boat is on the water.|船在水上。
+plane|飞机|The plane can fly.|飞机会飞。
+balloon|气球|The balloon is red.|气球是红色的。
+block|积木|I build with blocks.|我用积木搭房子。
+doll|娃娃|The doll is small.|娃娃小小的。
+kite|风筝|The kite is high.|风筝飞得高高的。
+tree|树|The tree is tall.|树很高。
+flower|花|The flower is pretty.|花很漂亮。
+sun|太阳|The sun is bright.|太阳很亮。
+moon|月亮|The moon is round.|月亮圆圆的。
+star|星星|I see a star.|我看见一颗星星。
+rain|雨|The rain is cold.|雨很凉。
+snow|雪|Snow is white.|雪是白色的。
+wind|风|The wind is strong.|风很大。
+cloud|云|The cloud is white.|云是白色的。
+sky|天空|The sky is blue.|天空是蓝色的。
+sea|海|The sea is big.|海很大。
+mountain|山|The mountain is high.|山很高。
+house|房子|My house is small.|我的房子很小。
+door|门|Close the door.|关上门。
+window|窗户|Look out the window.|看窗外。
+bed|床|My bed is soft.|我的床很软。
+chair|椅子|Sit on the chair.|坐在椅子上。
+table|桌子|The cake is on the table.|蛋糕在桌上。
+big|大|The elephant is big.|大象很大。
+small|小|The mouse is small.|老鼠很小。
+hot|热|The soup is hot.|汤很热。
+cold|冷|The snow is cold.|雪很冷。
+up|上|Look up.|往上看。
+down|下|Sit down.|坐下。
+fast|快|The car is fast.|汽车很快。
+slow|慢|The turtle is slow.|乌龟很慢。
+clean|干净|My hands are clean.|我的手很干净。
+dirty|脏|The shoes are dirty.|鞋子脏了。
+loud|大声|The lion is loud.|狮子声音很大。
+quiet|安静|Please be quiet.|请安静。
+hello|你好|Hello! I am Peppa.|你好！我是佩奇。
+bye|再见|Bye bye!|再见！
+please|请|Please help me.|请帮帮我。
+sorry|对不起|I am sorry.|对不起。
+yes|是|Yes, I like it.|是的，我喜欢。
+no|不|No, thank you.|不，谢谢。
+goodnight|晚安|Goodnight, sweetie.|晚安，宝贝。
+love|爱|I love you.|我爱你。

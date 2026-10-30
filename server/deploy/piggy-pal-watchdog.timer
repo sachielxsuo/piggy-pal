@@ -1,0 +1,12 @@
+[Unit]
+Description=PiggyPal watchdog every 10 minutes
+
+[Timer]
+# 每 10 分钟看一次日志/备份/磁盘；异常会推企业微信
+OnCalendar=*:0/10
+Persistent=true
+RandomizedDelaySec=45
+Unit=piggy-pal-watchdog.service
+
+[Install]
+WantedBy=timers.target

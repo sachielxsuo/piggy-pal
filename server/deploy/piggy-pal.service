@@ -1,0 +1,26 @@
+[Unit]
+Description=PiggyPal Server
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/piggy-pal
+ExecStart=/opt/piggy-pal/piggy-pal-server
+# 密钥从 /opt/piggy-pal/.env 注入（权限 600，不进 git）
+EnvironmentFile=/opt/piggy-pal/.env
+Environment=GIN_MODE=release
+Restart=always
+RestartSec=3
+# 优雅退出：SIGTERM 后服务会先排空在途请求（SSE 对话最长约 120 秒），
+# 这里必须比进程内的 drainTimeout（130 秒）长，否则会被 SIGKILL 截断。
+KillSignal=SIGTERM
+TimeoutStopSec=150
+# 低权限运行，别用 root
+User=piggy-pal
+Group=piggy-pal
+# 日志落盘：stdout/stderr 追加到本地文件（journald 之外再留一份，方便 grep/回传）
+StandardOutput=append:/var/log/piggy-pal/server.log
+StandardError=append:/var/log/piggy-pal/server.log
+
+[Install]
+WantedBy=multi-user.target

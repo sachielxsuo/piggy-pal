@@ -1,0 +1,12 @@
+[Unit]
+Description=Daily PiggyPal backup at 03:30
+
+[Timer]
+# 每天凌晨 3:30；Persistent 保证服务器凌晨关机 / 重启后当天会补跑一次
+OnCalendar=*-*-* 03:30:00
+Persistent=true
+RandomizedDelaySec=120
+Unit=piggy-pal-backup.service
+
+[Install]
+WantedBy=timers.target

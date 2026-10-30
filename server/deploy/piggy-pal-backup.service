@@ -1,0 +1,14 @@
+[Unit]
+Description=PiggyPal SQLite daily backup
+Documentation=file:///opt/piggy-pal/data/backups
+# 备份本身不需要网络；保持和主服务一致的运行用户
+After=local-fs.target
+
+[Service]
+Type=oneshot
+User=piggy-pal
+Group=piggy-pal
+UMask=0027
+ExecStart=/opt/piggy-pal/piggy-pal-backup
+Nice=10
+IOSchedulingClass=idle

@@ -1,0 +1,23 @@
+# PiggyPal 日志轮转：/etc/logrotate.d/piggy-pal
+# copytruncate 必须保留：systemd 以 append 方式持有该文件 fd，轮转时不能 rename 后重建
+/var/log/piggy-pal/server.log {
+    daily
+    rotate 7
+    compress
+    delaycompress
+    missingok
+    notifempty
+    copytruncate
+    size 10M
+}
+
+# App 上传的运行日志（文件名 = 日志起始时间），保留 8 周。
+# 现在按设备分目录（client/<client_id>/*.log），两个 pattern 都要匹配：
+# 前者是当前结构，后者兼容还散落在根目录的历史文件。
+/var/log/piggy-pal/client/*/*.log /var/log/piggy-pal/client/*.log {
+    weekly
+    rotate 8
+    compress
+    missingok
+    notifempty
+}

@@ -1,0 +1,13 @@
+services:
+  piggy-pal:
+    build: .
+    container_name: piggy-pal
+    restart: unless-stopped
+    # 密钥从服务器上的 .env 注入，绝不写进镜像
+    env_file:
+      - .env
+    ports:
+      - "18080:18080"
+    volumes:
+      # SQLite + TTS 缓存落盘，容器重建不丢数据
+      - ./data:/app/data

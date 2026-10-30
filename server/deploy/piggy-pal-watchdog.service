@@ -1,0 +1,13 @@
+[Unit]
+Description=PiggyPal watchdog (log errors / TTS quota / backup / disk)
+Documentation=file:///opt/piggy-pal/alert.env
+
+[Service]
+Type=oneshot
+User=piggy-pal
+Group=piggy-pal
+UMask=0077
+ExecStart=/opt/piggy-pal/piggy-pal-watchdog
+Nice=10
+# 巡检本身失败不该拖垮任何东西，也不要反复重启
+TimeoutStartSec=120

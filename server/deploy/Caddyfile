@@ -1,0 +1,23 @@
+# PiggyPal 反向代理（Caddy 自动 HTTPS）
+# 安装：拷贝到 /etc/caddy/Caddyfile 后 `systemctl reload caddy`
+# 前提：站点的 A 记录已指向本机，且 80/443 端口公网可达
+#
+# 注意：下面站点地址写的是占位域名，`server/deploy/deploy.sh` 上传前会自动替换成
+# deploy.env 里的 PIGGYPAL_DOMAIN，所以这个文件本身不需要手改。
+#
+# 本机 UDP/443 被 hysteria 占用，因此关闭 Caddy 的 HTTP/3，只走 TCP 的 HTTP/1.1 + HTTP/2
+{
+	servers {
+		protocols h1 h2
+	}
+}
+
+piggy.example.com {
+	# SSE 不能压缩：压缩器会攒够一段才吐，事件就失去「即时到达」的意义
+	@notSse not path /child/*/chat/stream
+	encode @notSse zstd gzip
+	reverse_proxy 127.0.0.1:18080 {
+		# 流式对话必须每个事件立刻 flush，不能等缓冲区满
+		flush_interval -1
+	}
+}

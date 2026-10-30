@@ -1,0 +1,9 @@
+.env
+*.db
+/data/
+tts-cache/
+bin/
+# go build 在 server/ 下生成的同名二进制（只忽略这个文件，
+# 别写成 `server`，否则会把 server/cmd/server/ 整个目录一起忽略掉）
+/server
+logs/
